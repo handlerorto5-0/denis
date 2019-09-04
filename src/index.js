@@ -1,7 +1,9 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles.css"
-// jquery,popper явно портировать не обязательно
-//import "jquery";
-//import "popper.js";
+/* jquery,popper явно портировать не обязательно
+надо в head html внести meta из документауии из bootstrap */
+import 'bootstrap';
 
-$('.jquery').html('jQueru run!');
-console.log('O-ho-ho and the botle of Rom');
+jQuery(document).ready(function($){
+
+})
