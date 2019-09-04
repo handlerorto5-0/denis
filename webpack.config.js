@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlwebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: "development",
@@ -15,6 +16,9 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
+    }),
+    new CleanWebpackPlugin({
+      default: ['**/*']
     })
   ],
   module: {
